@@ -1,2 +1,4 @@
 # guiRepo
-GUI class repository 
+GUI class repository
+
+Micah's README
