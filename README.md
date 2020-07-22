@@ -5,4 +5,4 @@ Micah's README
 
 Link to my cs server page: [here](https://cs.uml.edu/~mmperkin)
 
-Link to my github.io page: 
+Link to my github.io page: [here](https://mpsoftwarenstuff.github.io/guiRepo/)
