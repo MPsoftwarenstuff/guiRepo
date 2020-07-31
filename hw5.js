@@ -24,7 +24,7 @@ function formcollect() {
   }
   document.write("</tr></thead><tbody>");
 
-    if (z < y) {
+  if (z < y) {
     temp = y;
     y = z;
     z = temp;
