@@ -1,0 +1,14 @@
+/* Micah Perkins | micah_perkins@student.uml.edu |
+91.61 GUI Programming 1 | 8/5/2020 |
+A basic javascript program for my 6th homework assignment */
+
+footer {
+  text-align: center;
+}
+
+label.error {
+  color: #a94442;
+  background-color: #f2dede;
+  border-color: #ebccd1;
+  padding:1px 20px 1px 20px;
+}
