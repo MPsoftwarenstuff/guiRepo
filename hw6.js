@@ -45,10 +45,10 @@ $(document).ready(function() {
 
 function formcollect() {
   //collect form data
-  var w = document.getElementById("firstnum").value;
-  var x = document.getElementById("secondnum").value;
-  var y = document.getElementById("thirdnum").value;
-  var z = document.getElementById("fourthnum").value;
+  var w = Number(document.getElementById("firstnum").value);
+  var x = Number(document.getElementById("secondnum").value);
+  var y = Number(document.getElementById("thirdnum").value);
+  var z = Number(document.getElementById("fourthnum").value);
   var temp = 0;
 
   document.write("<h2>" + "You entered: " + w + ", " + x + ", " + y + ", " + z + "</h2>");
