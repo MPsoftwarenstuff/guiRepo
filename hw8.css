@@ -1,0 +1,114 @@
+/* Micah Perkins | micah_perkins@student.uml.edu |
+91.61 GUI Programming 1 | 8/5/2020 |
+A css file for my 8th homework assignment */
+
+body {
+  background-image: url(background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: lightgrey;
+}
+
+div {
+  display: block;
+}
+footer {
+  text-align: center;
+  position:absolute;
+  width:100%;
+  bottom:0px;
+}
+
+img {
+  height: 60px;
+  width: 60px;
+  margin-top: 15px;
+}
+
+.center { 
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slot {
+  background-image: url(Scrabble_Board_Blank.png); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 60px; 
+  height: 60px; 
+  float: left;
+  margin-left: 5px;
+  margin-right: 5px;
+  border-right: 3px solid black;
+}
+
+.slot-DW {
+  background-image: url(Scrabble_Board_DW.png); 
+  border-bottom: 2px solid black;
+  border-right: 3px solid black;
+  border-left: 1px solid black;
+}
+
+.slot-DL {
+  background-image: url(Scrabble_Board_DL.png); 
+  border-bottom: 4px solid black;
+  border-right: 2px solid black;
+}
+
+.tileonrack {
+  margin: 0 auto;
+}
+
+.tileonboard {
+  margin: 0 auto;
+}
+
+#board {
+  height: 60px;
+  width: 520px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#rack {
+  background-image: url("Scrabble_Tile_Rack.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 560px;
+  height: 160px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  text-align: center;
+}
+
+#user_guide {
+  background-image: url("Scrabble_Tile_Blank.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Georgia;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 200px;
+  height: 200px;
+  border-radius: 25px;
+}
+
+#buttons {
+  height: 150px;
+  text-align: center;
+}
+#scoreboard {
+  background-image: url("Scrabble_Tile_Blank.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Georgia;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 200px;
+  height: 200px;
+  border-radius: 25px;
+}
