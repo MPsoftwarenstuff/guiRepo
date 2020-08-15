@@ -62,7 +62,7 @@ var tilepos;
 var tileposid;
 //Main
 $(document).ready(function() {
-    
+
     var genResult = generateHand(); //boolean var to hold result of function (success or failure)
     $("#mulligan").click( function() {
         generateHand();
@@ -86,23 +86,24 @@ $(document).ready(function() {
         refreshPositions: true,
 
         start: function(event,ui) {
-            tilepos = $(this).position();
-            tileposid = findOrder(tilepos);
-            console.log(tilepos, tileposid)
+            //tilepos = $(this).position();
+            //tileposid = findOrder(tilepos);
+          //  console.log(tilepos, tileposid)
         },
-        
+
         drag: function(event, ui) {
             //updateScore();
         },
 
         stop: function(event, ui) {
-            if(tilepos != $(this).position()) {
-                var letter = $(this).attr("letter");
 
-                word = buildWord(word, letter, index);
-                $("#worddisplay").text("Word: " + word);
+            //if(tilepos != $(this).position()) {
+                //var letter = $(this).attr("letter");
+
+              //  word = buildWord(word, letter, index);
+                //$("#worddisplay").text("Word: " + word);
             }
-        }
+        
 
     });
 
@@ -119,7 +120,7 @@ $(document).ready(function() {
             var index = $(this).attr("id");
             console.log(index)
             index = index.charAt(5) - 1;
-            
+
             word = buildWord(word, letter, index);
             $("#worddisplay").text("Word: " + word);
         }
@@ -145,7 +146,7 @@ function findOrder(tilepos) {
     for (var i = 1; i < 7; ++i) {
         boardid = ("#board" + i);
         boardpos = $(boardid).position();
-        
+
         if(tilepos == boardpos) {
             return boardid;
         }
@@ -160,7 +161,7 @@ function updateScore(value) {
     $("#wordscore").text("Word: " + wordscore);
 }
 
-//generates a full "hand" of tiles 
+//generates a full "hand" of tiles
 function generateHand() {
     $(".drag").remove();
     var letter = "";
@@ -173,7 +174,7 @@ function generateHand() {
         //letter = checkTileCount(letter);
 
         $("#rack").append('<img src="Scrabble_Tile_' + letter + '.jpg" class="tileonrack drag draggable ui-widget-content" letter="' + letter + '">');
-    
+
         $(".drag").draggable({
             snap: ".ui-droppable",
             snapMode: "inner",
