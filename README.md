@@ -1,7 +1,5 @@
 # guiRepo
-GUI class repository
-
-Micah's README
+GUI 1 (COMP 4610) Assignments
 
 Link to my cs server page: [here](https://cs.uml.edu/~mmperkin)
 
