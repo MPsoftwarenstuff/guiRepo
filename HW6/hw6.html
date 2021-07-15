@@ -1,0 +1,87 @@
+<!-- Micah Perkins | micah_perkins@student.uml.edu |
+91.61 GUI Programming 1 | 8/5/2020 |
+A basic javascript program for my 6th homework assignment -->
+
+<!-- Disclaimer: All of this code was written by me,
+but w3schools provided much of the online assistance i needed to get everything working.
+Additionally, all images are not owned by me
+but all images were used from legally safe sources-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Micah's Website</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="hw6.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="hw6.js"></script>
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <ul class="navbar-nav">
+          <a class="navbar-brand" href="index.html">Perkins LLC</a>
+          <li class="nav-item-active">
+            <a  class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item">
+            <a  class="nav-link" href="HW2.html">HW2</a></li>
+          <li class="nav-item">
+            <a  class="nav-link" href="HW3.html">HW3</a></li>
+          <li class="nav-item">
+            <a  class="nav-link" href="HW4.html">HW4</a></li>
+            <li class="nav-item">
+              <a  class="nav-link" href="hw5.html">HW5</a></li>
+            <li class="nav-item">
+              <a  class="nav-link" href="hw6.html">HW6</a></li>
+        </ul>
+    </nav>
+
+    <div class="jumbotron">
+      <h2>Welcome to Micah's Dynamic Multiplier!<h2>
+    </div>
+    <div class="container">
+      <form id="numform">
+        <div class="form-group">
+          <label for="number">Multiplicand starts at:</label>
+            <input class="form-control" name="firstnum" id="firstnum" placeholder="Enter first number...">
+        </div>
+        <div class="form-group">
+          <label for="number">Multiplicand ends at:</label>
+            <input class="form-control" name="secondnum" id="secondnum" placeholder="Enter second number...">
+        </div>
+        <div class="form-group">
+          <label for="number">Multiplier starts at:</label>
+            <input class="form-control" name="thirdnum" id="thirdnum" placeholder="Enter third number...">
+        </div>
+        <div class="form-group">
+          <label for="number">Multiplier ends at:</label>
+            <input class="form-control" name="fourthnum" id="fourthnum" placeholder="Enter fourth number...">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    </div>
+
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div id="table">
+            </div>
+          </div>
+        </div>
+    </div>
+
+      <!-- shameless advertisement -->
+    <footer>
+      <p>Perkins Development LLC</p>
+    </footer>
+  </body>
+
+</html>

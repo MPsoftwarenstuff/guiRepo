@@ -1,0 +1,71 @@
+<!-- Micah Perkins | micah_perkins@student.uml.edu |
+91.61 GUI Programming 1 | 7/8/2020 |
+A basic javascript program for my 5th homework assignment -->
+
+<!-- Disclaimer: All of this code was written by me,
+but w3schools provided much of the online assistance i needed to get everything working.
+Additionally, all images are not owned by me
+but all images were used from legally safe sources-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Micah's Website</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="hw5.css">
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <ul class="navbar-nav">
+          <a class="navbar-brand" href="index.html">Perkins LLC</a>
+          <li class="nav-item-active">
+            <a  class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item">
+            <a  class="nav-link" href="HW2.html">HW2</a></li>
+          <li class="nav-item">
+            <a  class="nav-link" href="HW3.html">HW3</a></li>
+          <li class="nav-item">
+            <a  class="nav-link" href="HW4.html">HW4</a></li>
+            <li class="nav-item">
+              <a  class="nav-link" href="hw5.html">HW5</a></li>
+        </ul>
+    </nav>
+
+    <div class="jumbotron">
+      <h2>Welcome to Micah's Dynamic Multiplier!<h2>
+    </div>
+    <div class="container">
+      <form name="numform">
+        <div class="form-group">
+          <label for="number">Multiplicand starts at:</label>
+            <input required type="number" min="-50" max="50" class="form-control" id="firstnum" placeholder="Enter first number...">
+        </div>
+        <div class="form-group">
+          <label for="number">Multiplicand ends at:</label>
+            <input required type="number" min="-50" max="50" class="form-control" id="secondnum" placeholder="Enter second number...">
+        </div>
+        <div class="form-group">
+          <label for="number">Multiplier starts at:</label>
+            <input required type="number" min="-50" max="50" class="form-control" id="thirdnum" placeholder="Enter third number...">
+        </div>
+        <div class="form-group">
+          <label for="number">Multiplier ends at:</label>
+            <input required type="number" min="-50" max="50" class="form-control" id="fourthnum" placeholder="Enter fourth number...">
+        </div>
+        <button type="submit" class="btn btn-primary" onclick="formcollect();">Submit</button>
+
+        <script type="text/javascript" src="hw5.js"></script>
+
+      </form>
+    </div>
+      <!-- shameless advertisement -->
+    <footer>
+      <p>Perkins Development LLC</p>
+    </footer>
+  </body>
+
+</html>

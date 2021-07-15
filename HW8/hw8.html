@@ -1,0 +1,100 @@
+<!-- Micah Perkins | micah_perkins@student.uml.edu |
+91.61 GUI Programming 1 | 8/5/2020 |
+A website for my 8th homework assignment -->
+
+<!-- Disclaimer: All of this code was written by me,
+but w3schools and jquery ui provided much of the online assistance 
+i needed to get everything working.
+Additionally, all images are not owned by me
+but all images were used from legally safe sources-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Micah's Website</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="hw8.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="hw8.js"></script>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+      <ul class="navbar-nav">
+        <a class="navbar-brand" href="index.html">Perkins LLC</a>
+        <li class="nav-item-active">
+          <a  class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item">
+          <a  class="nav-link" href="HW2.html">HW2</a></li>
+        <li class="nav-item">
+          <a  class="nav-link" href="HW3.html">HW3</a></li>
+        <li class="nav-item">
+          <a  class="nav-link" href="HW4.html">HW4</a></li>
+        <li class="nav-item">
+          <a  class="nav-link" href="hw5.html">HW5</a></li>
+        <li class="nav-item">
+          <a  class="nav-link" href="hw6.html">HW6</a></li>
+        <li class="nav-item">
+          <a  class="nav-link" href="hw7.html">HW7</a></li>
+        <li class="nav-item">
+          <a  class="nav-link" href="hw8.html">HW8</a></li>
+      </ul>
+    </nav>
+
+    <div class="jumbotron">
+      <h2>Welcome to Micah's Scrabble Game!</h2>
+    </div>
+
+    <div id="wrapper" class="container">
+      <div class="container">
+        <div class="row">
+          <div id="board">
+              <div id="board1" class="slot ui-droppable"></div>
+              <div id="board2" class="slot slot-DL ui-droppable"></div>
+              <div id="board3" class="slot ui-droppable"></div>
+              <div id="board4" class="slot ui-droppable"></div>
+              <div id="board5" class="slot ui-droppable"></div>
+              <div id="board6" class="slot slot-DW ui-droppable"></div>
+              <div id="board7" class="slot ui-droppable"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div id="scoreboard">
+            <h1>SCORE: </h1><br>
+            <h3 id="totalscore">Total: 0</h1>
+            <h3 id="wordscore">Word: +0</h1>
+          </div>
+          <div id="buttons">
+            <br><br><br>
+            <p id="worddisplay">Word: </p>
+            <button disabled type="button" id="submit" class="btn btn-dark">Submit</button>
+            <button type="button" id="reset" class="btn btn-danger">Reset</button>
+            <button type="button" id="mulligan" class="btn btn-danger">New Hand</button>
+          </div>
+          <div id="user_guide"><br>
+            <p id="oneword">One word with no gap</p><br>
+            <p id="twoletters">At least 2 letters</p><br>
+            <p id="validword">Found in dictionary</p><br>
+          </div>
+        </div>
+      </div>
+
+      <div id="rack" class="ui-droppable">
+
+      </div>
+
+    </div>
+      <!-- shameless advertisement -->
+    <footer>
+      <p><em>Perkins Development LLC</em></p>
+    </footer>
+  </body>
+
+</html>
